@@ -1,0 +1,17 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Square's perimeter path -->
+    <rect x="10" y="10" width="180" height="180" fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Red circle -->
+    <circle r="10" fill="red">
+        <!-- Animate the circle to move around the square's perimeter -->
+        <animateMotion dur="10s" repeatCount="indefinite">
+            <mpath href="#square-path"/>
+        </animateMotion>
+    </circle>
+
+    <!-- Invisible path to follow -->
+    <path id="square-path" d="M 20 20 H 180 V 180 H 20 Z" fill="none" stroke="none"/>
+
+    
+</svg>

@@ -1,0 +1,29 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="black" />
+
+    <!-- Left paddle -->
+    <rect x="10" y="70" width="10" height="60" fill="white" />
+
+    <!-- Right paddle -->
+    <rect x="380" y="70" width="10" height="60" fill="white" />
+
+    <!-- Divider (dotted line) -->
+    <line x1="191" y1="0" x2="191" y2="200" stroke="white" stroke-width="2" stroke-dasharray="2, 8" />
+
+    <!-- Left scoreboard -->
+    <text x="80" y="40" fill="white" font-size="30" font-family="Lorem ipsum dolor sit amet" text-anchor="middle">00</text>
+
+    <!-- Right scoreboard -->
+    <text x="320" y="40" fill="white" font-size="30" font-family="Lorem ipsum dolor sit amet" text-anchor="middle">00</text>
+
+    <!-- Ball -->
+    <circle cx="50" cy="100" r="5" fill="white">
+        <animateMotion dur="2s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;0.5;1">
+            <mpath href="#pong-path" />
+        </animateMotion>
+    </circle>
+
+    <!-- Path for the ball to bounce back and forth -->
+    <path id="pong-path" d="M -30 0 H 333" fill="none" stroke="none" />
+</svg>
