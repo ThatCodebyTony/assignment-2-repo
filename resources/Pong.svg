@@ -19,7 +19,7 @@
 
     <!-- Ball -->
     <circle cx="50" cy="100" r="5" fill="white">
-        <animateMotion dur="1.5s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;0.5;1">
+        <animateMotion dur="1.2s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;0.5;1">
             <mpath href="#pong-path" />
         </animateMotion>
     </circle>
