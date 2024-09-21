@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* Basic reset for margin and padding */
+body, h1, nav, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    text-align: center; /* Center the banner */
+}
+
+.svg-container {
+    display: flex; /* Use flexbox for the SVG container */
+    justify-content: space-around; /* Space items evenly */
+    align-items: flex-start; /* Align items at the top */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.svg-container h1 {
+    margin: 10px 0; /* Space above and below headings */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    display: flex; /* Make nav items horizontal */
+    padding: 10px; /* Add some padding */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin-right: 15px; /* Space between nav items */
+}
+
+table {
+    width: 100%;
+    table-layout: auto;
+}
+
+td a {
+    white-space: nowrap; /* Prevent links from wrapping to the next line */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
